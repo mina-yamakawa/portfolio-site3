@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main-message{
+  width: 1160px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+main{
+  position: relative;
+}
+.sec1{
+  height: 486px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+.sec1-content{
+  width: 1160px;
+  margin: 0  auto;
+  text-align: center;
+}
+.sec1-ribon{
+  margin-bottom: 60px;
+}
+.sec1-container{
+  width: 767px;
+  height: 336px;
+  margin:  0 auto;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+}
+.line{
+  width: 768px;
+  height: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #999;
+}
+.line h3, .line6 h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.line6 {
+  width: 768px;
+  height: 55px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.line p, .line6 p {
+  font-size: 16px;
+  font-weight: normal;
+}
+.first, .second, .third, .sixth{
+  margin-right: 80px;
+}
+.forth{
+  margin-right: 65px;
+}
+.fifth{
+  margin-right: 113px;
+}
+/************
+page-top
+***********/
+.page-top{
+  position: fixed;
+  right: 200px;
+  bottom: 250px;
+  z-index: 100;
+}
+.page-top a{
+  position: absolute;
+  display: block;
+  width: 165px;
+  height: 174px;
+}
+@media(max-width:1080px){
+  .page-top{
+    right: 100px;
+  }
+  .page-top img{
+    width: 100px;
+    height: 100px;
+  }
+  .page-top a{
+  width: 100px;
+  height: 100px;
+}
+}
+@media(max-width:375px){
+  .page-top{
+    right: 85px;
+  }
+    .page-top img{
+    width: 80px;
+    height: 80px;
+  }
+  .page-top a{
+  width: 80px;
+  height: 80px;
+}
+}
+/************
+footer
+***********/
+footer{
+  height: 970px;
+}
+.footer-content{
+  bottom: 120px;
+}
+@media(min-width:1441px){
+  footer {
+  height: 1120px;
+}
+}

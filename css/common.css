@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  list-style: none;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body{
+  background-color: #FFFDF7;
+  color: #444;
+  font-family: 'M PLUS 1', sans-serif;
+}
+/******************
+top
+******************/
+.first-line{
+  width: 1024px;
+  height: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto 35px;
+}
+.header-logo-link{
+  display: block;
+  width: 270px;
+  height: 88px;
+}
+.header-logo-link:hover{
+  opacity: 0.5;
+}
+.kumo{
+  display: flex;
+  align-items: flex-end;
+}
+.header-kumo1{
+  display: block;
+  width: 182px;
+  height: 106px;
+}
+.header-kumo2{
+  display: block;
+  width: 182px;
+  height: 106px;
+  margin-left: 15px;
+}
+.header-kumo1:hover{
+  opacity: 0.5;
+}
+.header-kumo2:hover{
+  opacity: 0.5;
+}
+.main-nav{
+  width: 1024px;
+  margin: 0 auto 65px;
+}
+.main-nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav ul li a{
+  display: block;
+}
+.home:hover{
+  opacity: 0.5;
+}
+.day:hover{
+  opacity: 0.5;
+}
+.qa:hover{
+  opacity: 0.5;
+}
+.inquiry:hover{
+  opacity: 0.5;
+}
+.recruit:hover{
+  opacity: 0.5;
+}
+.main-message{
+  width: 1024px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.top-img{
+  text-align: center;
+  position: relative;
+  margin-bottom: 120px;
+}
+.slideshow{
+  display: flex;
+  justify-content: center;
+}
+.news-kumo{
+  position: absolute;
+  bottom: -120px;
+  left: -20px;
+  z-index: 1;
+}
+.news-icon{
+  position: absolute;
+  bottom: 50px;
+  left: 75px;
+  z-index: 10;
+}
+.news1{
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  bottom: 15px;
+  left: 75px;
+  z-index: 100;
+}
+.news2{
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  bottom: -15px;
+  left: 75px;
+  z-index: 100;
+}
+@media(min-width:1081px){
+ .menu{
+  display: none;
+} 
+}
+@media (max-width: 1080px){
+.first-line {
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  position: relative;
+}
+ .main-nav ul{
+   display: flex;
+    justify-content: space-around;
+  }
+.header-kumo1, .header-kumo2{
+  display: none;
+}
+.main-nav{
+  display: none;
+}
+  .header-logo{
+    margin-top: 25px;
+    margin-left: 35px;
+    height: 60px;
+  }
+  .main-message{
+    width: 95%;
+  }
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1010;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #333;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 10px;
+}
+.menu-btn span:after {
+    top: 10px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+  #menu-btn-check{
+    display: none;
+  }
+  #menu-btn-check:checked ~ .menu-content{
+    left: 0;
+  }
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 1005;
+    background-color: #fff;
+    opacity: 0.9;
+    transition: all 0.8s;
+}
+.menu-content-on {
+    padding: 20px 0 0 80px;
+    text-align: left;
+}
+.menu-content-on li {
+    list-style: none;
+}
+.menu-content-on li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+  .news-kumo{
+    left: 95px;
+  }
+  .news-icon{
+  position: absolute;
+  bottom: 60px;
+  left: 200px;
+  z-index: 10;
+}
+.news1{
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 200px;
+  z-index: 100;
+}
+.news2{
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: -20px;
+  left: 200px;
+  z-index: 100;
+}
+  .header-kumo2{
+  margin-left: 0px;
+}
+}
+@media(max-width:375px){
+  .first-line{
+    width: 375px;
+  }
+  .news-kumo{
+    width: 375px;
+    left: 0px;
+  }
+  .news-icon{
+    bottom: -15px;
+    left: 20px;
+  }
+  .news1{
+    left: 20px;
+    bottom: -40px;
+  }
+  .news2{
+    left: 20px;
+    bottom: -70px;
+  }
+}
+/******************
+footer
+******************/
+footer {
+  height: 1120px;
+  background-image: url("../images/top/bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  font-family: 'M PLUS 1', sans-serif;
+  position: relative;
+}
+.footer-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.footer-contact a{
+  display: block;
+}
+.logo{
+  margin-bottom: 15px;
+}
+.logo:hover{
+  opacity: 0.5;
+}
+.address{
+  margin-bottom: 30px;
+}
+.fax{
+  margin-left:  15px;
+}
+.sitemap {
+  display: inline-flex;
+  margin-left: 30px;
+}
+.sitemap ul{
+  margin-left: 30px;
+}
+.sitemap ul li{
+  margin-bottom: 15px;
+}
+.sitemap ul li:hover{
+  opacity: 0.5;
+}
+.sitemap ul li a{
+  color: #444;
+  text-decoration: none;
+}
+@media (min-width: 1441px){
+footer {
+    height: 1120px;
+    background-size: contain;
+}
+}
+@media(min-width:376px){
+  .sitemap-sp{
+    display: none;
+  }
+}
+@media(max-width:1080px){
+  footer{
+    height: 760px;
+    background-size: contain;
+  }
+  .sitemap{
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-contact{
+  margin-left: 115px;
+}
+  .footer-content{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  bottom: 0px;
+}
+  .address{
+    margin-bottom: 15px;
+  }
+}
+@media(max-width:375px){
+  .logo {
+    height: 60px;
+}
+  footer{
+    height: 180px;
+  }
+  .footer-contact{
+    margin-left: 30px;
+  }
+  .sitemap{
+    display: none;
+  }
+  .sitemap-sp{
+    display: none;
+  }
+  .sitemap-sp-line{
+    margin-right: 30px;
+  }
+  .sitemap-sp ul li{
+    margin-bottom: 20px;
+  }
+  .sitemap-sp ul li a{
+    color: #444;
+    text-decoration: none;
+  }
+  .tell, .fax{
+    width: 140px;
+    height: 24px;
+    padding-bottom: 10px;
+  }
+  .address{
+    display: flex;
+  }
+}
+
+ 

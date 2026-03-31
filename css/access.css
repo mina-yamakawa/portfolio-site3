@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.top{
+  height: 60px;
+  background-color: rgb(237, 113, 115, 0.2);
+  border: solid 2px #ed7173;
+  margin-bottom: 80px;
+}
+.top-container{
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 185px;
+  margin-top: 5px;
+}
+.top-container h1{
+  margin-left: 15px;
+  font-family: 'M PLUS 1', sans-serif;
+  font-size: 20px;
+}
+.sec1{
+  margin-bottom: 80px;
+}
+.sec1-content{
+  width: 1160px;
+  margin: 0  auto;
+  text-align: center;
+}
+.sec1-ribon{
+  margin-bottom: 60px;
+}
+main{
+  position: relative;
+}
+.sec2{
+  position: absolute;
+  bottom: -900px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 100;
+}
+.sec2-content{
+  width: 1160px;
+  margin: 0  auto;
+   text-align: center;
+}
+.sec2-ribon{
+  margin-bottom: 60px;
+}
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+    margin:0 auto;
+}
+.slider img {
+    width:40vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+    height:auto;
+    margin-bottom: 20px;
+}
+
+.slider .slick-slide {
+  transform: scale(0.8);/*左右の画像のサイズを80%に*/
+  transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+  opacity: 0.5;/*透過50%*/
+  height: 450px;
+}
+
+.slider .slick-slide.slick-center{
+  transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+  opacity: 1;/*透過なし*/
+}
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+.place{
+  font-size: 22px;
+  font-family: 'M PLUS 1', sans-serif;
+  font-weight: bold;
+}
+/************
+page-top
+***********/
+.page-top{
+  position: fixed;
+  right: 200px;
+  bottom: 250px;
+  z-index: 100;
+}
+.page-top a{
+  position: absolute;
+  display: block;
+  width: 165px;
+  height: 174px;
+}
+@media(max-width:1080px){
+  .page-top{
+    right: 100px;
+  }
+  .page-top img{
+    width: 100px;
+    height: 100px;
+  }
+  .page-top a{
+  width: 100px;
+  height: 100px;
+}
+}
+@media(max-width:375px){
+  .page-top{
+    right: 85px;
+  }
+    .page-top img{
+    width: 80px;
+    height: 80px;
+  }
+  .page-top a{
+  width: 80px;
+  height: 80px;
+}
+}
+/************
+footer
+***********/
+@media (min-width: 1441px){
+footer {
+    height: 1350px;
+    background-size: contain;
+}
+.footer-contact, .sitemap {
+    margin-top: 950px;
+}
+}

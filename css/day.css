@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main-message{
+  margin-bottom: 80px;
+}
+.select{
+  width: 1160px;
+  margin: 0 auto 80px;
+  text-align: center;
+  line-height: 2.0;
+}
+.select h1{
+  font-size: 24px;
+}
+.select h1 p{
+  font-size: 16px;
+}
+.select-content select{
+  border: 1px solid #333;
+  font-size: 20px;
+  color: #999;
+  margin-top: 15px;
+  width: 500px;
+  height: 50px;
+  background:#fff;
+  padding: 10px;
+}
+/************
+section1
+************/
+.sec1{
+  width: 1160px;
+  left: 0;
+  right: 0;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+.sec1-inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sec1-inner h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+#faq dl{
+  font-size: 20px;
+}
+#faq dl dt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px 60px 15px 30px;
+    margin-bottom: 22px;
+    box-shadow: 8px 8px 10px rgb(18 18 18 / 5%);
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+#faq dl span.question{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+#faq dl dt span:before, #faq dl dt span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#faq dl .active span:after {
+    transform: rotate(0);
+    transition: 0.5s;
+    margin-top: -1px;
+    content: "\f056";
+}
+#faq dl dt span:after{
+    box-sizing: border-box;
+    content: "\f055";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    color: #f9954a;
+    font-size: 30px;
+}
+#faq dl dd{
+    padding: 18px 40px 0 75px;
+    display: none;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+#faq dl .dd2{
+  padding: 0 0  0 30px;
+}
+#faq dl .dd5{
+  padding: 0;
+}
+#faq dl dd span.answer{
+    font-size: 32px;
+    margin-top: 0.5px;
+    margin-right: 0.5px;
+    color: #f9954a;
+    line-height: 1.5;
+    font-family: "Roboto";
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    transform: translateX(-110%);
+    padding-right: 10px;
+}
+/***************
+section2
+***************/
+.sec2{
+  width: 1160px;
+  margin: 0 auto 80px;
+}
+.sec2-content{
+  width: 1160px;
+  margin: 0  auto;
+  text-align: center;
+}
+.sec2-ribon{
+  margin-bottom: 60px;
+}
+.sec2-container{
+  width: 960px;
+  height: 160px;
+  margin: 0  auto;
+  border: solid 1px #999;
+  background-color: #fff;
+  text-align: left;
+  padding-top: 15px;
+  padding: 30px;
+}
+.sec2-container ul{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2.0;
+}
+.sec2-container ul li{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 2.0;
+}
+/************
+section3
+************/
+.sec3{
+  width: 1160px;
+  left: 0;
+  right: 0;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
+}
+.sec3-inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sec3-inner h2{
+  text-align: center;
+  margin-bottom: 60px;
+}
+#faq2 dl{
+  font-size: 20px;
+}
+#faq2 dl dt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px 60px 15px 30px;
+    margin-bottom: 22px;
+    box-shadow: 8px 8px 10px rgb(18 18 18 / 5%);
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+#faq2 dl span.question{
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+#faq2 dl dt span:before, #faq2 dl dt span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#faq2 dl .active span:after {
+    transform: rotate(0);
+    transition: 0.5s;
+    margin-top: -1px;
+    content: "\f056";
+}
+#faq2 dl dt span:after{
+    box-sizing: border-box;
+    content: "\f055";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    color: #f9954a;
+    font-size: 30px;
+}
+#faq2 dl dd{
+    padding: 18px 40px 0 75px;
+    display: none;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 700;
+}
+#faq2 dl dd span.answer{
+    font-size: 32px;
+    margin-top: 0.5px;
+    margin-right: 0.5px;
+    color: #f9954a;
+    line-height: 1.5;
+    font-family: "Roboto";
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    transform: translateX(-110%);
+    padding-right: 10px;
+}
+/*************
+section4
+**************/
+.sec4{
+  width: 1160px;
+  margin: 0 auto 80px;
+}
+.sec4-content{
+  width: 1160px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sec4-ribon{
+  margin-bottom: 60px;
+}
+.sec4-container{
+  width: 960px;
+  height: 480px;
+  margin: 0  auto;
+  border: solid 1px #999;
+  background-color: #fff;
+  padding: 30px;
+}
+.sec4-container ul{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2.0;
+  text-align: left;
+}
+.sec4-container ul li{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 2.0;
+  text-align: left;
+}
+/*****************
+section5
+*****************/
+main{
+  position: relative;
+}
+.sec5{
+  width: 960px;
+  height: 486px;
+  position: absolute;
+  bottom: -570px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+/*****************
+page-top
+*****************/
+.page-top{
+  position: fixed;
+  right: 200px;
+  bottom: 250px;
+  z-index: 100;
+}
+.page-top a{
+  position: absolute;
+  display: block;
+  width: 165px;
+  height: 174px;
+}
+@media(max-width:1080px){
+  .page-top{
+    right: 100px;
+  }
+  .page-top img{
+    width: 100px;
+    height: 100px;
+  }
+  .page-top a{
+  width: 100px;
+  height: 100px;
+}
+}
+@media(max-width:375px){
+  .page-top{
+    right: 85px;
+  }
+    .page-top img{
+    width: 80px;
+    height: 80px;
+  }
+  .page-top a{
+  width: 80px;
+  height: 80px;
+}
+/************
+  footer
+  ***********/
+}
+footer{
+  height: 970px;
+  margin-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+

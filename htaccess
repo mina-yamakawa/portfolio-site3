@@ -1,0 +1,4 @@
+AuthUserFile "/home/minna-design/www/smile-family/.htpasswd"
+AuthName "Enter password"
+AuthType BASIC
+require valid-user

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.main-message{
+  margin-bottom: 80px;
+}
+/****************
+section1
+***************/
+main{
+  position: relative;
+  margin-bottom: 80px;
+}
+.sec1{
+  width: 1160px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+.sec1-inner{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sec1-inner h1{
+  text-align: center;
+}
+.qa-ribon{
+  margin-bottom: 60px;
+}
+#faq dl{
+  font-size: 20px;
+}
+#faq dl dt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    padding: 15px 60px 15px 30px;
+    margin-bottom: 22px;
+    box-shadow: 8px 8px 10px rgb(18 18 18 / 5%);
+    position: relative;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+}
+#faq dl span.question{
+    font-size: 32px;
+    margin-right: 10px;
+    color: #999999;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+#faq dl dt span:before, #faq dl dt span:after{
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#faq dl .active span:after {
+    transform: rotate(0);
+    transition: 0.5s;
+    margin-top: -1px;
+    content: "\f056";
+}
+#faq dl dt span:after{
+    box-sizing: border-box;
+    content: "\f055";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    top: 20px;
+    color: #fdd531;
+    font-size: 30px;
+}
+#faq dl dd{
+    padding: 18px 40px 0 75px;
+    display: none;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 700;
+}
+#faq dl dd span.answer{
+    font-size: 32px;
+    margin-top: 0.5px;
+    margin-right: 0.5px;
+    color: #fdd531;
+    line-height: 1.5;
+    font-family: "Roboto";
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    transform: translateX(-110%);
+    padding-right: 10px;
+}
+@media(max-width:1024px){
+  .sec1{
+    padding-bottom: 60px;
+  }
+.sec1-inner{
+    width: 360px;
+}
+.sec1 h3{
+  font-size: 24px;
+  color: #00A1A3;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#faq dl{
+  font-size: 16px;
+}
+}
+.page-top{
+  position: fixed;
+  right: 200px;
+  bottom: 250px;
+  z-index: 100;
+}
+.page-top a{
+  position: absolute;
+  display: block;
+  width: 165px;
+  height: 174px;
+}
+@media(max-width:1080px){
+  .page-top{
+    right: 100px;
+  }
+  .page-top img{
+    width: 100px;
+    height: 100px;
+  }
+  .page-top a{
+  width: 100px;
+  height: 100px;
+}
+}
+@media(max-width:375px){
+  .page-top{
+    right: 85px;
+  }
+    .page-top img{
+    width: 80px;
+    height: 80px;
+  }
+  .page-top a{
+  width: 80px;
+  height: 80px;
+}
+}
+/************
+footer
+***********/
+footer{
+  height: 370px;
+}
+.footer-content{
+  bottom: 120px;
+}
+@media(min-width:1441px){
+  footer {
+  height: 820px;
+}
+}
